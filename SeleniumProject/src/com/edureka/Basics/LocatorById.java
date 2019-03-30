@@ -15,6 +15,7 @@ public class LocatorById {
 				"C:\\Users\\DEEL\\Edureka_Selenium\\SeleniumProject\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver(); // upcasting
 		driver.get("https://www.facebook.com");
+		driver.manage();
 		WebElement email=driver.findElement(By.id("email"));
 		email.sendKeys("sweet_angel14u14@yahoo.com");
 		WebElement password =driver.findElement(By.id("pass"));
